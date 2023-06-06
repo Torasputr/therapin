@@ -300,7 +300,7 @@
     </section><!-- End Layanan Section -->
 
     <!-- ======= Appointment Section ======= -->
-    @include('appointment1')
+    @include('appointment')
 
     <!-- ======= Departments Section ======= -->
     <section id="departments" class="departments">

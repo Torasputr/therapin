@@ -1,11 +1,5 @@
 <section id="appointment" class="appointment section-bg">
   <div class="container">
-
-    <div class="section-title">
-      <h2>Buat Appointment</h2>
-      <p>Silahkan isi informasi diri anda dan keadaan sekarang untuk mendapat pelayanan terbaik</p>
-    </div>
-
     <form action="submit" method="post" class="php-email-form">
       @csrf
       <div class="row">

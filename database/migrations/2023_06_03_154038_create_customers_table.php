@@ -14,11 +14,11 @@ return new class extends Migration
         Schema::create('customers', function (Blueprint $table) {
             $table->id();
             $table->string('name')->default("POG");
-            $table->string('email');
-            $table->string('phone');
-            $table->string('appointmentDate');
-            $table->string('department');
-            $table->string('doctor');
+            $table->string('email')->default("Lmao@example.com");
+            $table->string('phone')->nullable();
+            $table->string('appointmentDate')->nullable();
+            $table->string('department')->nullable();
+            $table->string('doctor')->nullable();
             $table->timestamp('publishedAt')->nullable();
             $table->timestamps();
         });

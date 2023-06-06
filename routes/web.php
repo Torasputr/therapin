@@ -20,18 +20,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::post('submit', [CustomerController::class, 'dataInsert']);
-// Route::get('/create', function() {
-//     return view('appointment');
-// });
-// Route::post('/create', function() {
-//     $customer = new Customer();
-//     $customer->name = request('name');
-//     $customer->email = request('email');
-//     $customer->phone = request('phone');
-//     $customer->appointmentDate = request('appointmentDate');
-//     $customer->department = request('department');
-//     $customer->doctor = request('doctor');
-//     $customer->save();
-//     return redirect('/');
+
+// Route::post('submit', function() {
+//     return redirect()->back();
 // });
 // Route::get('/', [Customerontroller::class, 'sendMail']);
