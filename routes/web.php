@@ -1,9 +1,11 @@
 <?php
 
-use App\Http\Controllers\MailController;
 use App\Models\Customer;
-use App\Http\Controllers\CustomerController;
+use App\Mail\CustomerMail;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\MailController;
+use App\Http\Controllers\CustomerController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,7 +22,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::post('submit', [CustomerController::class, 'dataInsert']);
-
 // Route::post('submit', function() {
 //     return redirect()->back();
 // });

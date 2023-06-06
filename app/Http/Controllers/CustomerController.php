@@ -3,8 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Models\Customer;
+use App\Mail\CustomerMail;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
+use Illuminate\Support\Facades\Mail;
 
 class CustomerController extends Controller
 {
@@ -19,6 +21,7 @@ class CustomerController extends Controller
 
         $isInsertSuccess = Customer::insert(['name'=>$name, 'email'=>$email, 'phone'=>$phone, 'appointmentDate'=>$appointmentDate, 'department'=>$department, 'doctor'=>$doctor, 'publishedAt'=>$publishedAt]);
         if($isInsertSuccess) {
+            Mail::to('mailtrap.club@gmail.com')->send(new CustomerMail($name));
             return redirect()->back();
         }
         else {
