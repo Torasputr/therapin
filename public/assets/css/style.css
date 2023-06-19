@@ -1460,7 +1460,6 @@ section {
 --------------------------------------------------------------*/
 .contact .info {
   width: 100%;
-  background: #fff;
 }
 
 .contact .info i {
@@ -1506,7 +1505,6 @@ section {
 
 .contact .php-email-form {
   width: 100%;
-  background: #fff;
 }
 
 .contact .php-email-form .form-group {
@@ -1675,7 +1673,9 @@ section {
 }
 
 #footer .footer-newsletter {
-  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #footer .footer-newsletter h4 {
