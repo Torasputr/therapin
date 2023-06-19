@@ -59,7 +59,7 @@
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
 
-      <h1 class="logo me-auto"><a href="index.html">TherapIn</a></h1>
+      <h1 class="logo me-auto"><a href="#"><img src="assets/img/Logo.png" alt="Logo"></a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
@@ -70,7 +70,7 @@
           <li><a class="nav-link scrollto" href="#services">Layanan</a></li>
           <li><a class="nav-link scrollto" href="#departments">Departemen</a></li>
           <li><a class="nav-link scrollto" href="#doctors">Dokter</a></li>
-          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+          <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="#">Drop Down 1</a></li>
               <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
@@ -86,7 +86,7 @@
               <li><a href="#">Drop Down 3</a></li>
               <li><a href="#">Drop Down 4</a></li>
             </ul>
-          </li>
+          </li> -->
           <li><a class="nav-link scrollto" href="#contact">Kontak</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -209,24 +209,24 @@
 
           <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
             <div class="count-box">
-              <i class="far fa-hospital"></i>
-              <span data-purecounter-start="0" data-purecounter-end="18" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Specialties</p>
+              <i class="fa-solid fa-address-card"></i>
+              <span data-purecounter-start="0" data-purecounter-end="2000" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Customers</p>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
             <div class="count-box">
-              <i class="fas fa-flask"></i>
-              <span data-purecounter-start="0" data-purecounter-end="0" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Research Labs</p>
+              <i class="fas fa-star"></i>
+              <span data-purecounter-start="0" data-purecounter-end="1900" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Positive Reviews</p>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
             <div class="count-box">
               <i class="fas fa-award"></i>
-              <span data-purecounter-start="0" data-purecounter-end="0" data-purecounter-duration="1" class="purecounter"></span>
+              <span data-purecounter-start="0" data-purecounter-end="7" data-purecounter-duration="1" class="purecounter"></span>
               <p>Awards</p>
             </div>
           </div>
@@ -256,7 +256,7 @@
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
             <div class="icon-box">
-              <div class="icon"><i class="fas fa-pills"></i></div>
+              <div class="icon"><i class="fas fa-hospital-user"></i></div>
               <h4><a href="">Cognitive Behavioral Therapy</a></h4>
               <p>Therapis profesional kami akan membantu anda untuk mencapai perubahan yang anda inginkan dengan Cognitive Behavioral Therapy (CBT)</p>
             </div>
@@ -264,7 +264,7 @@
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
             <div class="icon-box">
-              <div class="icon"><i class="fas fa-hospital-user"></i></div>
+              <div class="icon"><i class="fas fa-pills"></i></div>
               <h4><a href="">Preskripsi Obat</a></h4>
               <p>Therapis profesional kami dapat mempreskripsikan obat yang bisa membantu kondisi anda bila dibutuhkan</p>
             </div>
@@ -272,7 +272,7 @@
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
             <div class="icon-box">
-              <div class="icon"><i class="fas fa-dna"></i></div>
+              <div class="icon"><i class="fas fa-globe"></i></div>
               <h4><a href="">Therapi Online</a></h4>
               <p>TherapIn menyediakan layanan therapi online via chat dan video call</p>
             </div>
@@ -288,7 +288,7 @@
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
             <div class="icon-box">
-              <div class="icon"><i class="fas fa-notes-medical"></i></div>
+              <div class="icon"><i class="fas fa-clock"></i></div>
               <h4><a href="">Layanan 24 Jam</a></h4>
               <p>TherapIn menyediakan layanan perjanjian therapis 24 jam sesuai dengan jadwal masing-masing therapis</p>
             </div>
@@ -788,14 +788,16 @@
             </ul>
           </div>
 
-          <div class="col-lg-4 col-md-6 footer-newsletter">
-            <h4>Bergabung dengan Buletin Kami</h4>
+          <!-- <div class="col-lg-4 col-md-6 footer-newsletter"> -->
+            <!-- <h4>Bergabung dengan Buletin Kami</h4> -->
             <!-- <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p> -->
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
-            </form>
+            <!-- <form action="" method="post"> -->
+              <!-- <input type="email" name="email"><input type="submit" value="Subscribe"> -->
+            <!-- </form> -->
+          <!-- </div> -->
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+           <h4 class="logo-bawah"><a href="#"><img src="assets/img/Logo.png" width = 100% height = auto></a></h4>
           </div>
-
         </div>
       </div>
     </div>
@@ -811,7 +813,7 @@
           <!-- You can delete the links only if you purchased the pro version. -->
           <!-- Licensing information: https://bootstrapmade.com/license/ -->
           <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/medilab-free-medical-bootstrap-theme/ -->
-          Designed by <a href="https://bootstrapmade.com/">Team TherapIn</a>
+          Designed by <a href="#">Team TherapIn</a>
         </div>
       </div>
       <div class="social-links text-center text-md-right pt-3 pt-md-0">
