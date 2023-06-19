@@ -16,7 +16,7 @@ class CustomerMail extends Mailable
     /**
      * Create a new message instance.
      */
-    public function __construct(private $name)
+    public function __construct(private $name, private $appointmentDate, private $department, private $doctor)
     {
         //
     }
@@ -38,7 +38,7 @@ class CustomerMail extends Mailable
     {
         return new Content(
             view: 'mail.customerEmail',
-            with: ['name' => $this->name]
+            with: ['name' => $this->name, 'appointmentDate' => $this->appointmentDate, 'department' => $this->department, 'doctor' => $this->doctor]
         );
     }
 

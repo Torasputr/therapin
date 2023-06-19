@@ -21,7 +21,7 @@ class CustomerController extends Controller
 
         $isInsertSuccess = Customer::insert(['name'=>$name, 'email'=>$email, 'phone'=>$phone, 'appointmentDate'=>$appointmentDate, 'department'=>$department, 'doctor'=>$doctor, 'publishedAt'=>$publishedAt]);
         if($isInsertSuccess) {
-            Mail::to('mailtrap.club@gmail.com')->send(new CustomerMail($name));
+            Mail::to('mailtrap.club@gmail.com')->send(new CustomerMail($name, $appointmentDate, $department, $doctor));
             return redirect()->back();
         }
         else {
