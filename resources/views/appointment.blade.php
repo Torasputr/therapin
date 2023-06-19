@@ -18,24 +18,24 @@
       </div>
       <div class="row">
         <div class="col-md-4 form-group mt-3">
-          <input type="string" name="appointmentDate" class="form-control datepicker" id="appointmentDate" placeholder="Appointment Date" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+          <input type="date" name="appointmentDate" class="form-control datepicker" id="appointmentDate" placeholder="Appointment Date" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
           <div class="validate"></div>
         </div>
         <div class="col-md-4 form-group mt-3">
           <select name="department" id="department" class="form-select">
             <option value="">Select Department</option>
-            <option value="Department 1">Department 1</option>
-            <option value="Department 2">Department 2</option>
-            <option value="Department 3">Department 3</option>
+            <option value="Psikiater">Psikiater</option>
+            <option value="Psikolog">Psikolog</option>
           </select>
           <div class="validate"></div>
         </div>
         <div class="col-md-4 form-group mt-3">
           <select name="doctor" id="doctor" class="form-select">
             <option value="">Select Doctor</option>
-            <option value="Doctor 1">Doctor 1</option>
-            <option value="Doctor 2">Doctor 2</option>
-            <option value="Doctor 3">Doctor 3</option>
+            <option value="Whet Phaartz">Whet Phaartz</option>
+            <option value="Chris P. Bacon">Chris P. Bacon</option>
+            <option value="Hana Utako">Hana Utako</option>
+            <option value="Hyeon Dae Hi">Hyeon Dae Hi</option>
           </select>
           <div class="validate"></div>
         </div>
