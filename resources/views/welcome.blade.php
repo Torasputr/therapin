@@ -90,21 +90,24 @@
           <li><a class="nav-link scrollto" href="#contact">Kontak</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
+      </nav>
+      <!-- .navbar -->
 
       <a href="#appointment" class="appointment-btn scrollto"><span class="d-none d-md-inline">Buat</span> Perjanjian</a>
 
     </div>
-  </header><!-- End Header -->
+  </header>
+  <!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
     <div class="container">
       <h1>Welcome to TherapIn</h1>
-      <h2>Orang Gila Makin Gila Kleb Kleb</h2>
+      <h2>Empowering Minds, Nurturing Wellness: Your Path to Mental Health Excellence</h2>
       <a href="#about" class="btn-get-started scrollto">Ayo Mulai</a>
     </div>
-  </section><!-- End Hero -->
+  </section>
+  <!-- End Hero -->
 
   <main id="main">
 
@@ -117,7 +120,7 @@
             <div class="content">
               <h3>Why Choose TherapIn?</h3>
               <p>
-                Mental brekdens epridey epriyey mind go crazey ooga booga stinky
+                Transformative mental health journey, where personalized care, expert guidance, and a supportive community converge to empower you on the path to lasting well-being.
               </p>
               <div class="text-center">
                 <a href="#" class="more-btn">Cari Tahu <i class="bx bx-chevron-right"></i></a>
@@ -130,22 +133,22 @@
                 <div class="col-xl-4 d-flex align-items-stretch">
                   <div class="icon-box mt-4 mt-xl-0">
                     <i class="bx bx-receipt"></i>
-                    <h4>Mental Healthy</h4>
-                    <p>Kami akan dengan senang hanti membantu anda supaya permasalahan anda bisa seindah rambut cepmek Dilan Cepmek</p>
+                    <h4>Comprehensive Care Approach</h4>
+                    <p>Provides a holistic and comprehensive approach to mental health</p>
                   </div>
                 </div>
                 <div class="col-xl-4 d-flex align-items-stretch">
                   <div class="icon-box mt-4 mt-xl-0">
                     <i class="bx bx-cube-alt"></i>
-                    <h4>Mau loncat?</h4>
-                    <p>Sebelum anda melakukan hal-hal yang dapat merugikan diri anda, sebaiknya menggunakan TherapIn terlebih dahulu.</p>
+                    <h4>Expertise and Credibility</h4>
+                    <p>Our practice is certified and hires qualified therapists</p>
                   </div>
                 </div>
                 <div class="col-xl-4 d-flex align-items-stretch">
                   <div class="icon-box mt-4 mt-xl-0">
                     <i class="bx bx-images"></i>
-                    <h4>Stay Depresot and Never Stop Crying</h4>
-                    <p>Pengguna kami sangat disarankan untuk mengikuti slogan kami supaya bisnis kami dapat terus berjalan dengan baik dan lancar dan kami tetap mendapatkan income.</p>
+                    <h4>Personalized Treatment Plans</h4>
+                    <p>importance of personalized care in addressing mental health issues effectively.</p>
                   </div>
                 </div>
               </div>
@@ -167,8 +170,7 @@
 
           <div class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5">
             <h3>Bertemulah dengan Tim Kami</h3>
-            <p>Temuilah team kami yang sangat kompeten, POGGERS, dan BUSSIN BUSSIN ini dengan kelebihan-kelebihannya yaitu:</p>
-
+            <p>Experience our highly competent and qualified team, backed by their exceptional features</p>
             <div class="icon-box">
               <div class="icon"><i class="bx bx-fingerprint"></i></div>
               <h4 class="title"><a href="">Terenkripsi</a></h4>
@@ -196,7 +198,6 @@
     <!-- ======= Counts Section ======= -->
     <section id="counts" class="counts">
       <div class="container">
-
         <div class="row margin=auto">
 
           <div class="col-lg-3 col-md-6">
@@ -242,7 +243,7 @@
 
         <div class="section-title">
           <h2>Layanan</h2>
-          <p>Kami menyediakan layanan therapi kesehatan mental berkelas dunia.</p>
+          <p>Kami menyediakan layanan terapi kesehatan mental berkelas dunia.</p>
         </div>
 
         <div class="row">
@@ -297,7 +298,8 @@
         </div>
 
       </div>
-    </section><!-- End Layanan Section -->
+    </section>
+    <!-- End Layanan Section -->
 
     <!-- ======= Appointment Section ======= -->
     @include('appointment')
@@ -354,7 +356,8 @@
         </div>
 
       </div>
-    </section><!-- End Departments Section -->
+    </section>
+    <!-- End Departments Section -->
 
     <!-- ======= Doctors Section ======= -->
     <section id="doctors" class="doctors">
@@ -362,83 +365,27 @@
 
         <div class="section-title">
           <h2>Dokter</h2>
-          <p>Inilah daftar dari therapist kami yang nantinya akan membantu anda dalam membuat anda jadi dari mau loncat jadi jatuh terpeleset</p>
+          <p>Inilah daftar dari therapist dan psikolog kami yang nantinya akan membantu anda</p>
         </div>
 
         <div class="row">
-
-          <div class="col-lg-6">
-            <div class="member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/doctors/doctors-1.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Whet Phaartz</h4>
-                <span>Spesialis Mental Breakdance</span>
-                <p>No hablo espanol</p>
-                <div class="social">
-                  <a href=""><i class="ri-twitter-fill"></i></a>
-                  <a href=""><i class="ri-facebook-fill"></i></a>
-                  <a href=""><i class="ri-instagram-fill"></i></a>
-                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+          @foreach ($doctors as $doctor)
+            <div class="col-lg-6">
+              <div class="member d-flex align-items-start">
+                <div class="pic">
+                  <img src="{{ $doctor->picture }}" class="img-fluid" alt="">
+                </div>
+                <div class="member-info">
+                  <h4>{{ $doctor->name }}</h4>
+                  <span>{{ $doctor->specialty }}</span>
+                  <p>{{ $doctor->quote }}</p>
                 </div>
               </div>
             </div>
-          </div>
-
-          <div class="col-lg-6 mt-4 mt-lg-0">
-            <div class="member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/doctors/doctors-2.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Hana Utako</h4>
-                <span>Spesialis Anti Racism</span>
-                <p>Saya bukan wibu</p>
-                <div class="social">
-                  <a href=""><i class="ri-twitter-fill"></i></a>
-                  <a href=""><i class="ri-facebook-fill"></i></a>
-                  <a href=""><i class="ri-instagram-fill"></i></a>
-                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6 mt-4">
-            <div class="member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/doctors/doctors-3.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Chris P. Bacon</h4>
-                <span>Spesialis Generasi Hiling Hiling UwU</span>
-                <p>Yo my service is bussin bussin frfr please book me UwU</p>
-                <div class="social">
-                  <a href=""><i class="ri-twitter-fill"></i></a>
-                  <a href=""><i class="ri-facebook-fill"></i></a>
-                  <a href=""><i class="ri-instagram-fill"></i></a>
-                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6 mt-4">
-            <div class="member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/doctors/doctors-4.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Hyeon Dae Hi</h4>
-                <span>Spesialis Woke Movement</span>
-                <p>Cancel L + Ratio</p>
-                <div class="social">
-                  <a href=""><i class="ri-twitter-fill"></i></a>
-                  <a href=""><i class="ri-facebook-fill"></i></a>
-                  <a href=""><i class="ri-instagram-fill"></i></a>
-                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
+          @endforeach
       </div>
-    </section><!-- End Doctors Section -->
+    </section>
+    <!-- End Doctors Section -->
 
     <!-- ======= Frequently Asked Questions Section ======= -->
     <section id="faq" class="faq section-bg">
@@ -508,88 +455,27 @@
 
         <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
           <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="testimonial-wrap">
-                <div class="testimonial-item">
-                  <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                  <h3>Saul Goodman</h3>
-                  <h4>Ceo &amp; Founder</h4>
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Saya loncat dari lantai 7.
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
+            @foreach($testimonies as $testimony)
+              <div class="swiper-slide">
+                <div class="testimonial-wrap">
+                  <div class="testimonial-item">
+                    <img src="{{ $testimony->picture }}" class="testimonial-img" alt="">
+                    <h3>{{ $testimony->name }}</h3>
+                    <h4>{{ $testimony->role }}</h4>
+                    <p>
+                      <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                      {{ $testimony->testimony }}
+                      <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-wrap">
-                <div class="testimonial-item">
-                  <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                  <h3>Sara Wilsson</h3>
-                  <h4>Designer</h4>
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Sebelumnya saya mau loncat, setelah pake therapin, saya jadi cuma jatuh dari tangga. Terimakasih Therapin!
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-wrap">
-                <div class="testimonial-item">
-                  <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                  <h3>Jena Karlis</h3>
-                  <h4>Store Owner</h4>
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Saya stress urusin toko saya. Jadi saya ke Therapin dan akhirnya tokonya saya bakar. Saya bebas dari stress. Terimakasih Therapin
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-wrap">
-                <div class="testimonial-item">
-                  <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                  <h3>Matt Brandon</h3>
-                  <h4>Freelancer</h4>
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Saya pusing cari kerjaan. Saya daftar jadi therapist di Therapin dan diterima. Saya pun jadi therapist diri saya sendiri. Terimakasih Therapin.
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-wrap">
-                <div class="testimonial-item">
-                  <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-                  <h3>John Larson</h3>
-                  <h4>Entrepreneur</h4>
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Saya jadi pembicara di banyak tempat dan karena itu saya stress. Setelah pake Therapin, saya jadi termindblown dan tidak bisa bicara lagi. Terimakasih Therapin. 
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
+              <!-- End testimonial item -->
+            @endforeach
           </div>
-          <div class="swiper-pagination"></div>
         </div>
-
       </div>
-    </section><!-- End Testimonials Section -->
+
 
     <!-- ======= Gallery Section ======= -->
     <section id="gallery" class="gallery">
@@ -597,81 +483,24 @@
 
         <div class="section-title">
           <h2>Galeri</h2>
-          <p>Berikut adalah gallery kami yang udah pasti bener dan ga ada tipu-tipunya sama sekali</p>
+          <p>Berikut adalah gallery dari kegiatan yang telah kami lakukan sebelumnya</p>
         </div>
       </div>
 
       <div class="container-fluid">
         <div class="row g-0">
-
+          @foreach($images as $image)
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-1.jpg" class="galelry-lightbox">
-                <img src="assets/img/gallery/gallery-1.jpg" alt="" class="img-fluid">
+              <a href="{{ $image->picture }}" class="galelry-lightbox">
+                <img src="{{ $image->picture }}" alt="" class="img-fluid">
               </a>
             </div>
           </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-2.jpg" class="galelry-lightbox">
-                <img src="assets/img/gallery/gallery-2.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-3.jpg" class="galelry-lightbox">
-                <img src="assets/img/gallery/gallery-3.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-4.jpg" class="galelry-lightbox">
-                <img src="assets/img/gallery/gallery-4.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-5.jpg" class="galelry-lightbox">
-                <img src="assets/img/gallery/gallery-5.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-6.jpg" class="galelry-lightbox">
-                <img src="assets/img/gallery/gallery-6.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-7.jpg" class="galelry-lightbox">
-                <img src="assets/img/gallery/gallery-7.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-8.jpg" class="galelry-lightbox">
-                <img src="assets/img/gallery/gallery-8.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Gallery Section -->
+          @endforeach
+          
+    </section>
+    <!-- End Gallery Section -->
 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">

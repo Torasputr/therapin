@@ -4,7 +4,9 @@ use App\Models\Customer;
 use App\Mail\CustomerMail;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\DataController;
 use App\Http\Controllers\MailController;
+use App\Http\Controllers\DoctorController;
 use App\Http\Controllers\CustomerController;
 
 /*
@@ -18,9 +20,7 @@ use App\Http\Controllers\CustomerController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [DataController::class, "show"]);
 Route::post('submit', [CustomerController::class, 'dataInsert']);
 // Route::post('submit', function() {
 //     return redirect()->back();
