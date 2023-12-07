@@ -17,31 +17,31 @@ class TestimonySeeder extends Seeder
             [
                 'name' => 'Saul Goodman',
                 'role' => 'CEO & Founder of OogaBooga Company',
-                'testimony' => "Saya loncat dari lantai 7",
+                'testimony' => "I used to carry the weight of the world on my shoulders. Thanks to counseling, I discovered the strength within me to face my fears and navigate life's challenges. I'm no longer defined by my struggles; I've become the author of my own story",
                 'picture' => 'assets/img/testimonials/testimonials-1.jpg',
             ],
             [
                 'name' => 'Sara Wilsson',
                 'role' => 'Designer of LMFAO',
-                'testimony' => "Sebelumnya saya mau loncat setelah pake Therapin, saya jadi cuma jatuh dari tangga",
+                'testimony' => "Anxiety used to control every aspect of my life. Through therapy and a supportive community, I've learned coping mechanisms that have empowered me to take back control. Now, I'm living a life filled with joy and purpose.",
                 'picture' => 'assets/img/testimonials/testimonials-2.jpg',
             ],
             [
                 'name' => 'Jena Karlis',
                 'role' => 'Owner of NoosBee',
-                'testimony' => "Saya stress urusin toko saya jadi saya ke Therapin dan akhirnya toko saya bakar. Saya bebas dari stress. Terimakasih Therapin",
+                'testimony' => "Opening up about my mental health felt impossible. But by sharing my journey on this platform, I realized I'm not alone. Together, we're breaking the stigma surrounding mental health and fostering a community of understanding and acceptance.",
                 'picture' => 'assets/img/testimonials/testimonials-3.jpg',
             ],
             [
                 'name' => 'Matt Brandon',
                 'role' => 'Freelancer',
-                'testimony' => "Saya pusing client minta kejar deadline begitu dikasih suruh revisi. Setelah pake Therapin, clientnya saya bunuh. Terimakasih Therapin",
+                'testimony' => "Mindfulness meditation has been a game-changer for me. Learning to be present in the moment has brought a sense of calmness I never thought possible. I've found a new perspective on life, embracing each day with gratitude and peace.",
                 'picture' => 'assets/img/testimonials/testimonials-4.jpg',
             ],
             [
                 'name' => 'John Larson',
                 'role' => 'Entrepreneur',
-                'testimony' => "Understanding yourself is the first step towards healing. Let's embark on this journey together.",
+                'testimony' => "Connecting with others who understand my struggles has been a lifeline. Support groups provided me with a safe space to share, learn, and grow. Together, we've become a source of strength for one another, proving that no one is truly alone.",
                 'picture' => 'assets/img/testimonials/testimonials-5.jpg',
             ],
         ];
