@@ -70,31 +70,17 @@
           <li><a class="nav-link scrollto" href="#services">Layanan</a></li>
           <li><a class="nav-link scrollto" href="#departments">Departemen</a></li>
           <li><a class="nav-link scrollto" href="#doctors">Dokter</a></li>
-          <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-            </ul>
-          </li> -->
           <li><a class="nav-link scrollto" href="#contact">Kontak</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav>
       <!-- .navbar -->
-
-      <a href="#appointment" class="appointment-btn scrollto"><span class="d-none d-md-inline">Buat</span> Perjanjian</a>
-
+      @if(Auth::check()) 
+        <a href="#appointment" class="appointment-btn scrollto"><span class="d-none d-md-inline">Buat</span> Perjanjian</a>
+      @else 
+        <a href="/login" class="appointment-btn scrollto"><span class="d-none d-md-inline">Log</span> In</a>
+        <a href="/register" class="appointment-btn scrollto"><span class="d-none d-md-inline"></span> Register</a>
+      @endif
     </div>
   </header>
   <!-- End Header -->
@@ -302,7 +288,13 @@
     <!-- End Layanan Section -->
 
     <!-- ======= Appointment Section ======= -->
-    @include('appointment')
+    @if(Auth::check()) 
+      @include('appointment')
+    @else
+      <a href="/login">
+        <h3>Please login to make appointment</h3>
+      </a>
+    @endif
 
     <!-- ======= Departments Section ======= -->
     <section id="departments" class="departments">

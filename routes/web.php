@@ -8,6 +8,7 @@ use App\Http\Controllers\DataController;
 use App\Http\Controllers\MailController;
 use App\Http\Controllers\DoctorController;
 use App\Http\Controllers\CustomerController;
+use App\Http\Controllers\SessionController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,6 +23,11 @@ use App\Http\Controllers\CustomerController;
 
 Route::get('/', [DataController::class, "show"]);
 Route::post('submit', [CustomerController::class, 'dataInsert']);
+Route::get('/login', [SessionController::class, 'index']);
+Route::get('/logout', [SessionController::class, 'logout']);
+Route::post('/login', [SessionController::class, 'login']);
+Route::get('/register', [SessionController::class, 'register']);
+Route::post('/register', [SessionController::class, 'create']);
 // Route::post('submit', function() {
 //     return redirect()->back();
 // });
